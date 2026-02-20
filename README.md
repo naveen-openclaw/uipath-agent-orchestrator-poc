@@ -3,6 +3,20 @@
 A Proof of Concept (POC) demonstrating **Agentic Orchestration** using the UiPath OpenAI Agents SDK.
 This project implements the "Orchestrator Pattern" shown in the [UiPath OpenAI Agents Quick Start video](https://youtu.be/K_LU5Yd-CTU).
 
+## ⚡ Key Differentiator: Why This SDK is Revolutionary
+
+This project highlights a fundamental shift in how UiPath automations are built.
+
+| Feature | Previous UiPath SDKs / Traditional RPA | New `uipath-openai-agents` SDK |
+| :--- | :--- | :--- |
+| **Logic Control** | **Deterministic:** Hardcoded `If/Else` blocks, Flowcharts, and State Machines. The developer must predict every possible user path. | **Probabilistic / Agentic:** Natural Language `Instructions`. The LLM dynamically decides the best path based on user intent and available tools. |
+| **Execution** | **Linear Process:** Step 1 → Step 2 → Step 3. Rigid execution. | **Goal-Oriented:** "Here is the goal, figure out the steps." The agent can skip steps, loop, or ask for clarification. |
+| **Integration** | **Activities:** Drag-and-drop connectors or library calls. | **Tools:** Standard Python functions exposed to the LLM. The agent decides *when* and *how* to call them. |
+| **Handoffs** | **Complex Wiring:** Requires complex argument passing and variable management to move data between workflows. | **Native Handoffs:** Agents can transfer the conversation to specialized sub-agents (e.g., `transfer_to_identity`) while preserving full context automatically. |
+| **Development** | **Studio-First:** Heavy reliance on visual canvas. | **Code-First:** Define logic in Python (`main.py`), then deploy to UiPath Cloud as a managed service. |
+
+**In short:** The previous SDK was about **building robots** that follow instructions. This SDK is about **building agents** that *understand* instructions and orchestrate the robots.
+
 ## Architecture
 
 **1. Orchestrator Agent (IT Support)**
