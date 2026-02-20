@@ -1,0 +1,5 @@
+{
+    "agents": {
+        "it_support_agent": "main.py:it_support_agent"
+    }
+}

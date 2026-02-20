@@ -1,0 +1,11 @@
+[project]
+name = "enterprise-it-support"
+version = "0.1.0"
+description = "Enterprise IT Support Agent Orchestrator with Identity and Access Sub-Agents"
+authors = [{ name = "Naveen Chatlapalli", email = "naveen.chatlapalli@example.com" }]
+requires-python = ">=3.11"
+dependencies = [
+    "uipath-openai-agents",
+    "openai>=1.0.0",
+    "requests"
+]
